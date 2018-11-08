@@ -6,7 +6,7 @@
 #  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#
+
 
 class User < ApplicationRecord
   
@@ -23,4 +23,6 @@ class User < ApplicationRecord
     primary_key: :id,
     foreign_key: :instructor_id,
     class_name: :Course
+    
+
 end
